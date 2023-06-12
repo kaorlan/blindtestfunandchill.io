@@ -1,0 +1,91 @@
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.team {
+  text-align: center;
+  padding: 20px;
+}
+
+.team h2 {
+  margin-bottom: 10px;
+}
+
+.buzzer {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#timer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.team.active {
+  border: 3px solid yellow;
+}
+.points {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+/* Styles par défaut */
+
+.team {
+  width: 33.33%;
+  float: left;
+}
+
+/* Styles pour les écrans de taille moyenne */
+@media (max-width: 768px) {
+  .team {
+    width: 50%;
+  }
+  body {
+    background-size: contain;
+  }
+}
+
+/* Styles pour les petits écrans */
+@media (max-width: 480px) {
+  .team {
+    width: 100%;
+    float: none;
+  }
+}
+
+body {
+  background-image: url("FChill.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.team-container {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team {
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+}
+
+.points {
+  margin-top: 10px;
+  font-weight: bold;
+}
+

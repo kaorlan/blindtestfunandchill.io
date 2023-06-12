@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    /* Votre code CSS pour l'image de fond */
+    body {
+      background-image: url("FChill.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background-size: contain;
+      }
+    }
+  </style>
+</head>
+<body>
+    <section>
+      <div class="team-container">
+      <div class="team" id="team1">
+        <h2>Équipe 1</h2>
+        <div class="player" id="player1"></div>
+        <button class="buzzer" onclick="buzz(1)">Buzzer</button>
+        <div class="points" id="team1-points"></div>
+      </div>
+      <div class="team" id="team2">
+        <h2>Équipe 2</h2>
+        <div class="player" id="player2"></div>
+        <button class="buzzer" onclick="buzz(2)">Buzzer</button>
+        <div class="points" id="team2-points"></div>
+      </div>
+      <div class="team" id="team3">
+        <h2>Équipe 3</h2>
+        <div class="player" id="player3"></div>
+        <button class="buzzer" onclick="buzz(3)">Buzzer</button>
+        <div class="points" id="team3-points"></div>
+      </div>
+      <div id="timer"></div>
+      </div>
+    </section>
+    
+    <div id="organizer">
+      <input type="number" id="pointsInput" placeholder="Points">
+      <button onclick="assignPoints()">Attribuer des points</button>
+    </div>
+    
+    <div id="username-input">
+      <input type="text" id="username" placeholder="Entrez votre pseudo">
+      <button onclick="joinTeam()">Rejoindre une équipe</button>
+    </div>
+    
+    <audio id="audioPlayer" src="buzzer.mp3"></audio>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
